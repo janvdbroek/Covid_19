@@ -5,7 +5,7 @@ Reproductive power function Covid-19 outbreak in the Netherlands
 Netherlands**</font>
 
   - Analysis of the reported cases per day using the reproductive power
-    function : [Cases/day](cases_day.md).
+    function : [Cases/day](cases_day.html).
 
   - To do:
     
