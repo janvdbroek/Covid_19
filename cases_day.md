@@ -56,22 +56,35 @@ infected individual will produce an infected at \(t_j\).
 
 The conditional probability of observing \(z_{t_j}\) new infected
 individuals at time \(t_j\) given \(y_{t_{j-1}}\) infected individuals
-at the previous time point \(t_{j-1}\) is:  The expected value is: 
+at the previous time point \(t_{j-1}\) is: ![alt text](cond_dist.gif)
+
+The expected value is:
+
+![alt text](expect.gif)
 
 Taking a log link for the expected value of the number of new cases
 (\(Z(t_j)\)), at time interval \(t_j\), given the total number of cases
-in the previous interval, gives:  One can assume a parametric model for
-the survival function and use this in () to calculate the reproductive
-power probability function, as was done in (Van Den Broek, J. and
-Heesterbeek, J.A.P. (2007) “Non-Homogeneous Birth and Death Models for
-Epidemic Outbreak Data”. Biostatistics8, 453-467) with members from the
-Burr-family. To avoid this parametric assumption, one can model the time
-effects with a piece wise constant function in discrete time. \\  The
-log-odds of the reproductive probability can be modelled linearly in the
-covariates. If the covariates all have baseline values (usually zero),
-the model for the log-odds of the base line reproductive probability,
-\(R_{p}(t_{j})\), is  so \(\alpha_{t_{j}}\) is the log-odds of the
-reproductive power probability at time \(t_j\), and 
+in the previous interval, gives:
+
+![alt text](lmu.gif)
+
+One can assume a parametric model for the survival function and use this
+to calculate the reproductive power probability function, as was done in
+(Van Den Broek, J. and Heesterbeek, J.A.P. (2007) “Non-Homogeneous Birth
+and Death Models for Epidemic Outbreak Data”. Biostatistics8, 453-467)
+with members from the Burr-family. To avoid this parametric assumption,
+one can model the time effects with a piece wise constant function in
+discrete time. \\  The log-odds of the reproductive probability can be
+modelled linearly in the covariates. If the covariates all have baseline
+values (usually zero), the model for the log-odds of the base line
+reproductive probability, \(R_{p}(t_{j})\), is
+
+![alt text](alpha.gif)
+
+so \(\alpha_{t_{j}}\) is the log-odds of the reproductive power
+probability at time \(t_j\), and
+
+![alt text](Rp.gif)
 
 # The data
 
