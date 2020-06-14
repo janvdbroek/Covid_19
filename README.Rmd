@@ -10,7 +10,7 @@ editor_options:
 
 <font size="5"> **Reproductive power function Covid-19 outbreak in the Netherlands**</font> 
 
-- Analysis of the reported cases per day using the reproductive power function : [Cases/day](cases_day.html).
+- Analysis of the reported cases per day using the reproductive power function : [Cases/day](cases_day.md).
 
 
 - To do:
