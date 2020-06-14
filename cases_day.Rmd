@@ -1,6 +1,6 @@
 ---
-title: "Reproductive power function Covid-19 outbreak in the Netherlands"
-output: html_document
+title: "Registrated cases per day"
+output: github_document
 ---
 
 ```{r setup, include=FALSE}
@@ -23,31 +23,27 @@ $R_p(t_{j})$ is the discrete quasi-reproductive power probability function herea
 
 
 The conditional probability of observing $z_{t_j}$ new infected individuals at time  $t_j$ given $y_{t_{j-1}}$ infected individuals at the previous time point $t_{j-1}$  is:
-\begin{align}
-\label{nbprob}
-P ( Z(t_j)=z_{t_j}|Y(t_{j-1})=y_{t_{j-1}} )={z_{t_j}+y_{t_{j-1}}-1 \choose y_{t_{j-1}}-1}\left[ 1-R_p(t_{j})\right]^{y_{t_{j-1}}} \left[R_p(t_{j}) \right]^{z_{t_j}}, z_{t_j}=0,1,\cdots \nonumber
-\end{align}
-The expected value is: 
-\begin{align}
-\label{expect}
-E[Z(t_j)]=\mu_{t_j}=y_{t_{j-1}}\frac{R_p(t_j)}{1-R_p(t_j)} ,
-\end{align}
+![alt text](cond_dist.gif)
+
+The expected value is:
+
+![alt text](expect.gif)
 
 Taking a log link for the expected value of the number of new cases ($Z(t_j)$), at time interval $t_j$, given the total number of cases in the previous interval, gives:
-\begin{align*}
-\log [\mu_{t_j}]=\log [y_{t_{j-1}}]+\log\left[\frac{R_p(t_j)}{1-R_p(t_j)}\right]
-\end{align*}
-One can assume a parametric model for the survival function and use this in (\ref{c-prop}) to calculate the reproductive power probability function, as was done in (Van Den Broek, J. and Heesterbeek, J.A.P. (2007) "Non-Homogeneous  Birth  and  Death Models for Epidemic Outbreak Data". Biostatistics8, 453-467) with members from the Burr-family. To avoid this parametric assumption, one can model the time effects with a piece wise constant function in discrete time.
+
+![alt text](lmu.gif)
+
+One can assume a parametric model for the survival function and use this to calculate the reproductive power probability function, as was done in (Van Den Broek, J. and Heesterbeek, J.A.P. (2007) "Non-Homogeneous  Birth  and  Death Models for Epidemic Outbreak Data". Biostatistics8, 453-467) with members from the Burr-family. To avoid this parametric assumption, one can model the time effects with a piece wise constant function in discrete time.
 \\
 \indent
 The log-odds of the reproductive probability can be modelled linearly in the covariates. If the covariates all have baseline values (usually zero), the model for the log-odds of the base line reproductive probability, $R_{p}(t_{j})$, is
-\begin{align*}
-\log \left[\frac{R_{p}(t_{j})}{1-R_{p}(t_{j})} \right]=\alpha_{t_{j}},
-\end{align*}
+
+![alt text](alpha.gif)
+
 so $\alpha_{t_{j}}$ is the log-odds of the reproductive power probability at time $t_j$, and
-\begin{align*}
-R_{p}(t_{j})=\frac{e^{\alpha_{t_{j}}}}{1-e^{\alpha_{t_{j}}}}.
-\end{align*}
+
+![alt text](Rp.gif)
+
 
 # The data
 The data is taken from the website of the RIVM: https://www.rivm.nl/coronavirus-covid-19/grafieken
