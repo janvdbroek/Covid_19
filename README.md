@@ -11,7 +11,7 @@ of covid-19 by the RIVM in the Netherlands.
   - The models used in the analysis: [models](TheModelsUsed.pdf).
   - Analysis of the reported cases per day: [cases/day](cases_day.md).
   - Analysis of the hospitalized covid19 cases per :
-    [hospitalized/day](hospitalized_day).
+    [hospitalized/day](hospitalized_day.md).
 
 <font size="5"> All comments and sugestions are most welcome. Please
 email me: <j.vandenbroek@uu.nl></font>

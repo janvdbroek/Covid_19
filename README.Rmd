@@ -14,7 +14,7 @@ An analysis with the reproductive power function of the reported cases of covid-
 
 - The models used in the analysis: [models](TheModelsUsed.pdf).
 - Analysis of the reported cases per day: [cases/day](cases_day.md).
-- Analysis of the hospitalized covid19 cases per : [hospitalized/day](hospitalized_day).
+- Analysis of the hospitalized covid19 cases per : [hospitalized/day](hospitalized_day.md).
 
 
 <font size="5"> 
