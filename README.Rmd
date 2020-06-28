@@ -6,8 +6,9 @@ output:
     toc_depth: 3
 editor_options: 
   chunk_output_type: inline
+  includes:
+            in_header: rm.sty
 ---
-
 <font size="5"> **Covid-19 outbreak in the Netherlands using a reproductive power model and a Markov mixing model**</font> 
 
 An analysis with the reproductive power function of the reported cases of covid-19 by the RIVM in the Netherlands.
