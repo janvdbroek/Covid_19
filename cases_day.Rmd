@@ -151,7 +151,7 @@ ggplot(Gm,aes(x=Datum,y=state8))+
 
 The 4 state levels are: state 1 with a level of 0.15, state 2 with a level of 0.08, state 3 with a level of 0.05 and state 4 with a level of 0.03.
 
-Using the 4-state model one might come up withe the following peroids:
+Using the 4-state model one might come up withe the following periods:
 
 28-2 until 27-3: outbreak state with state level 1; 
 
