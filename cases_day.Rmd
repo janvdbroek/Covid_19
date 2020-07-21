@@ -6,6 +6,18 @@ output: github_document
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
+<style type="text/css">
+body, td {
+   font-size: 20px;
+}
+code.r{
+  font-size: 16px;
+}
+pre {
+  font-size: 12px
+}
+</style>
+
 
 # The data
 The data is taken from the website of the RIVM: https://www.rivm.nl/coronavirus-covid-19/grafieken.
